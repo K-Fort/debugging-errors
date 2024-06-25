@@ -4,5 +4,8 @@ if (input)
   console.log(reverse(input));
 
 function reverse(original) {
-  return orignal.split('').reverseList().join('');
+  //'original' is declared but its value is never read.
+  //Could not find name 'orignal'. Did you mean 'original'?
+  //Misspelling, fix it for original
+  return original.split('').reverseList().join('');
 }
